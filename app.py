@@ -31,18 +31,8 @@ class AdivinadorApp:
         self.label_pregunta = tk.Label(root, text="", wraplength=300, font=("Arial", 18))
         self.label_pregunta.pack(pady=20)
         
-        self.imagen1 = Image.open("imagen1.jpeg").resize((200,200))
+        self.imagen1 = Image.open("imagen1.png").resize((200,200))
         self.imagen_tk1 = ImageTk.PhotoImage(self.imagen1)
-        self.imagen2 = Image.open("imagen2.jpeg").resize((200,200))
-        self.imagen_tk2 = ImageTk.PhotoImage(self.imagen2)
-        self.imagen3 = Image.open("imagen3.jpeg").resize((200,200))
-        self.imagen_tk3 = ImageTk.PhotoImage(self.imagen3)
-        self.imagen4 = Image.open("imagen4.jpeg").resize((200,200))
-        self.imagen_tk4 = ImageTk.PhotoImage(self.imagen4)
-        self.imagen5 = Image.open("imagen5.jpeg").resize((200,200))
-        self.imagen_tk5 = ImageTk.PhotoImage(self.imagen5)
-        self.imagen6 = Image.open("imagen6.jpeg").resize((200,200))
-        self.imagen_tk6 = ImageTk.PhotoImage(self.imagen6)
 
         self.label_imagen = tk.Label(root, image=self.imagen_tk1)
         self.label_imagen.pack(pady=20)
@@ -176,12 +166,12 @@ class AdivinadorApp:
     def actualizar_imagen(self):
         # Lista de imágenes precargadas
         imagenes = [
-            "imagen1.jpeg",
-            "imagen2.jpeg",
-            "imagen3.jpeg",
-            "imagen4.jpeg",
-            "imagen5.jpeg",
-            "imagen6.jpeg"
+            "imagen1.png",
+            "imagen2.png",
+            "imagen3.png",
+            "imagen4.png",
+            "imagen5.png",
+            "imagen6.png"
         ]
 
         # Elegir una imagen al azar
